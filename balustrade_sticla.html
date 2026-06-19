@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="light" lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sisteme de Balustrade din Sticlă - DECORATORII</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c3c7c8",
+                        "metallic-silver": "#DFE4EA",
+                        "background": "#f9f9f9",
+                        "secondary-fixed": "#d9e4ea",
+                        "secondary-container": "#d6e1e7",
+                        "on-secondary-fixed-variant": "#3e484d",
+                        "primary": "#010506",
+                        "surface-dim": "#dadada",
+                        "warm-sand": "#F1F2F6",
+                        "on-tertiary-fixed-variant": "#554334",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary-fixed": "#131d21",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-fixed": "#f9dec9",
+                        "surface": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "secondary-fixed-dim": "#bdc8ce",
+                        "slate-deep": "#1E272E",
+                        "surface-container": "#eeeeee",
+                        "outline": "#747879",
+                        "on-tertiary-fixed": "#26190c",
+                        "on-secondary-container": "#596469",
+                        "bronze-accent": "#A58E7C",
+                        "surface-tint": "#586062",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#dcc2ae",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#41484a",
+                        "on-background": "#1a1c1c",
+                        "on-surface-variant": "#434749",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#161d1f",
+                        "on-surface": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#c0c8ca",
+                        "surface-variant": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#808789",
+                        "inverse-primary": "#c0c8ca",
+                        "on-tertiary-container": "#988270",
+                        "secondary": "#556065",
+                        "primary-container": "#181f21",
+                        "tertiary-container": "#291b0e",
+                        "tertiary": "#0a0300",
+                        "primary-fixed": "#dde4e6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "64px",
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "stack-xl": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-xl-mobile": ["Hanken Grotesk"],
+                        "headline-sm": ["Hanken Grotesk"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-xl": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl-mobile": ["40px", {"lineHeight": "1.1", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .nav-drawer-open {
+            transform: translateX(0) !important;
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accent-divider {
+            height: 4px;
+            width: 48px;
+            background-color: #A58E7C;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-bronze-accent selection:text-white">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-40 bg-surface/80 backdrop-blur-md border-b border-metallic-silver transition-all duration-300" id="main-header">
+    <div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+        <div class="flex items-center gap-4">
+            <button class="p-2 text-primary hover:text-bronze-accent transition-colors duration-200" id="menu-toggle">
+                <span class="material-symbols-outlined text-[28px]" data-icon="menu">menu</span>
+            </button>
+        </div>
+        <a class="flex items-center" href="index.html">
+            <img alt="DECORATORII" class="h-10 md:h-12 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtyMHIax7Urx09CFuUBDE2txjHqwwSDUkhk2C0tGVC7Z1lgGO25JytIqsmMOUiQlV0kKYPGQJtule2HPVP0JM3UFJdCtUoEZhBMCTk5m7jpVUYsXZ4uW14hzwOBRXGPo5kEnfIocl-ljI7cOcotxaf6DHYE0AfGUK9oMi08oLx1eBdN0ewHOqHxqtnKrH7D6GvDcR65jHYhfuLZPc4HT5PCKAVZXj2erVqQeKw3V-kEEJjWNrvZL8bG-E-1"/>
+        </a>
+        <div class="hidden md:flex items-center gap-6">
+            <a class="text-secondary font-label-md text-label-md hover:text-bronze-accent transition-colors duration-300" href="index.html">HOME</a>
+            <a class="text-secondary font-label-md text-label-md hover:text-bronze-accent transition-colors duration-300" href="proiecte.html">PROIECTE</a>
+            <a class="flex items-center gap-2 border border-bronze-accent text-bronze-accent px-4 py-2 font-label-md text-[13px] tracking-wider hover:bg-bronze-accent hover:text-white transition-all duration-300" href="brosura.pdf" download>
+                <span class="material-symbols-outlined text-[18px]">download</span> BROSURĂ
+            </a>
+            <a class="bg-slate-deep text-white px-5 py-2.5 font-label-md text-label-md tracking-widest hover:bg-bronze-accent transition-all duration-300" href="tel:+40750298002">0750 298 002</a>
+        </div>
+        <div class="md:hidden flex items-center gap-2">
+            <a class="p-2 text-bronze-accent flex items-center" href="brosura.pdf" download title="Descarcă broșura">
+                <span class="material-symbols-outlined text-[26px]">download</span>
+            </a>
+            <a class="p-2 text-primary" href="tel:+40750298002">
+                <span class="material-symbols-outlined" data-icon="call">call</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- NavigationDrawer Overlay -->
+<div class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-500" id="drawer-overlay"></div>
+
+<!-- NavigationDrawer -->
+<nav class="fixed inset-y-0 left-0 w-[85%] md:w-96 bg-surface z-50 transform -translate-x-full transition-transform duration-500 ease-out flex flex-col shadow-xl" id="nav-drawer">
+    <div class="p-8 flex justify-between items-center border-b border-metallic-silver">
+        <span class="font-headline-md text-headline-md font-bold tracking-tighter text-slate-deep">DECORATORII</span>
+        <button class="text-primary" id="close-drawer">
+            <span class="material-symbols-outlined" data-icon="close">close</span>
+        </button>
+    </div>
+    <div class="flex-1 overflow-y-auto py-8 px-8 space-y-8">
+        <div class="space-y-4">
+            <p class="text-outline font-label-md text-label-md tracking-widest border-b border-metallic-silver pb-2">CATEGORII</p>
+            <div class="flex flex-col gap-6">
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="index.html">
+                    <span class="material-symbols-outlined" data-icon="home">home</span> Home
+                </a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="placi_decorative.html">
+                    <span class="material-symbols-outlined" data-icon="texture">texture</span> Placi Decorative
+                </a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="elemente_fatada.html">
+                    <span class="material-symbols-outlined" data-icon="architecture">architecture</span> Elemente Fatada
+                </a>
+                <a class="group flex items-center gap-4 text-bronze-accent font-bold font-headline-sm text-headline-sm border-b border-bronze-accent pb-2" href="balustrade_sticla.html">
+                    <span class="material-symbols-outlined" data-icon="grid_view">grid_view</span> Balustrade Sticla
+                </a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="sticla_imprimata.html">
+                    <span class="material-symbols-outlined" data-icon="imagesearch_roller">imagesearch_roller</span> Sticla Imprimata
+                </a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="contact.html">
+                    <span class="material-symbols-outlined" data-icon="mail">mail</span> Contact
+                </a>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-metallic-silver">
+            <a class="flex items-center justify-center gap-2 w-full bg-bronze-accent text-white py-3 font-label-md tracking-widest hover:bg-slate-deep transition-all duration-300" href="brosura.pdf" download>
+                <span class="material-symbols-outlined">download</span> DESCARCĂ BROȘURA
+            </a>
+        </div>
+    </div>
+    <div class="p-8 bg-warm-sand">
+        <p class="text-body-sm text-secondary mb-4">Comenzi și Consultanță</p>
+        <a class="text-headline-sm font-headline-sm text-slate-deep font-bold" href="tel:+40750298002">0750 298 002</a>
+    </div>
+</nav>
+
+<!-- Main Content (Balustrade Sticla) -->
+<main class="pt-32 pb-stack-xl max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    <!-- Intro Section -->
+    <section class="mb-stack-lg reveal-on-scroll active">
+        <span class="font-label-md text-label-md text-bronze-accent uppercase tracking-[0.2em] block mb-4">Transparență Structurală</span>
+        <h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-slate-deep mb-6">BALUSTRADE STICLĂ</h1>
+        <div class="accent-divider mb-8"></div>
+        <p class="font-body-lg text-body-lg text-secondary max-w-3xl leading-relaxed">
+            Sisteme arhitecturale minimaliste proiectate pentru a maximiza aportul de lumină și a elimina barierele vizuale, păstrând coerența estetică a proiectelor rezidențiale premium.
+        </p>
+    </section>
+
+    <!-- Premium Presentation Split Layout -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center mb-stack-xl">
+        <div class="lg:col-span-5 space-y-6 lg:pr-6 order-2 lg:order-1 reveal-on-scroll active">
+            <div class="h-px w-16 bg-bronze-accent"></div>
+            <h3 class="font-headline-md text-headline-md text-slate-deep">Imaterialitate vizuală, siguranță absolută</h3>
+            <p class="font-body-md text-secondary leading-relaxed">
+                Proiectate să reziste la presiuni dinamice extreme, sistemele noastre de balustrade libere oferă un finisaj fluid, continuu, perfect adaptat pentru a adăuga valoare estetică pe termen lung ansamblurilor rezidențiale.
+            </p>
+            <div class="pt-4 flex flex-col gap-3 font-mono text-[13px] text-slate-deep border-t border-metallic-silver">
+                <div><span class="text-bronze-accent font-bold mr-2">// SPECIFICAȚII:</span> Testat conform normelor europene</div>
+                <div><span class="text-bronze-accent font-bold mr-2">// COERENȚĂ:</span> Design minimalist, fără a încărca vizual spațiul</div>
+            </div>
+        </div>
+        <div class="lg:col-span-7 relative aspect-[4/3] bg-warm-sand overflow-hidden border border-metallic-silver order-1 lg:order-2 reveal-on-scroll active" style="transition-delay: 0.1s;">
+            <img class="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" alt="Balustrade de sticla arhitectura minimalista terasa lux" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"/>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/10"></div>
+        </div>
+    </section>
+
+    <!-- Structural Mounting Systems Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-stack-xl">
+        <!-- System 1 -->
+        <div class="bg-white border border-metallic-silver p-8 flex flex-col justify-between group reveal-on-scroll active">
+            <div>
+                <span class="font-mono text-label-md text-bronze-accent block mb-4">PROFILE TIP MENGHINĂ</span>
+                <h4 class="font-headline-sm text-headline-sm text-slate-deep mb-2">Profil Continuu U-Channel</h4>
+                <p class="font-body-sm text-secondary leading-relaxed mb-6">Sistem de fixare la pardoseală sau îngropat complet în șapă. Profilul din aluminiu eloxat oferă un ritm curat și stabilitate impecabilă.</p>
+            </div>
+            <div class="aspect-[4/3] bg-warm-sand overflow-hidden relative mb-6 border border-metallic-silver">
+                <img class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" alt="Profil continuu aluminiu balustrada sticla" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"/>
+            </div>
+            <a href="contact.html" class="font-label-md text-body-sm font-bold text-slate-deep group-hover:text-bronze-accent flex items-center gap-2">DETALII ANCORARE <span class="material-symbols-outlined">chevron_right</span></a>
+        </div>
+
+        <!-- System 2 -->
+        <div class="bg-white border border-metallic-silver p-8 flex flex-col justify-between group reveal-on-scroll active" style="transition-delay: 0.1s;">
+            <div>
+                <span class="font-mono text-label-md text-bronze-accent block mb-4">PRINDERI PUNCTUALE</span>
+                <h4 class="font-headline-sm text-headline-sm text-slate-deep mb-2">Butoni Inox Structural</h4>
+                <p class="font-body-sm text-secondary leading-relaxed mb-6">Prindere laterală compactă, utilizând piese din oțel masiv. Soluție flexibilă ușor de integrat în proiecte de amploare.</p>
+            </div>
+            <div class="aspect-[4/3] bg-warm-sand overflow-hidden relative mb-6 border border-metallic-silver">
+                <img class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" alt="Butoni inox fixare punctuala sticla scari" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=80"/>
+            </div>
+            <a href="contact.html" class="font-label-md text-body-sm font-bold text-slate-deep group-hover:text-bronze-accent flex items-center gap-2">DETALII ANCORARE <span class="material-symbols-outlined">chevron_right</span></a>
+        </div>
+
+        <!-- System 3 -->
+        <div class="bg-white border border-metallic-silver p-8 flex flex-col justify-between group reveal-on-scroll active" style="transition-delay: 0.2s;">
+            <div>
+                <span class="font-mono text-label-md text-bronze-accent block mb-4">SISTEM MONTANȚI MINIMAL</span>
+                <h4 class="font-headline-sm text-headline-sm text-slate-deep mb-2">Profile Spigot / Mini-Piloni</h4>
+                <p class="font-body-sm text-secondary leading-relaxed mb-6">Prinderi verticale autoportante discrete care permit drenajul rapid al apei. Rezistență ridicată la intemperii și impact fizic.</p>
+            </div>
+            <div class="aspect-[4/3] bg-warm-sand overflow-hidden relative mb-6 border border-metallic-silver">
+                <img class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" alt="Sistem mini piloni spigots balustrada sticla" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"/>
+            </div>
+            <a href="contact.html" class="font-label-md text-body-sm font-bold text-slate-deep group-hover:text-bronze-accent flex items-center gap-2">DETALII ANCORARE <span class="material-symbols-outlined">chevron_right</span></a>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="reveal-on-scroll active">
+        <div class="bg-white border border-metallic-silver p-12 md:p-24 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12 rounded-lg">
+            <div class="max-w-xl text-center lg:text-left">
+                <span class="text-bronze-accent font-label-md text-label-md tracking-widest block mb-2 uppercase">Architectural Specifier</span>
+                <h2 class="font-headline-lg text-headline-lg text-slate-deep mb-6">Aveți nevoie de detalii de execuție sau cote speciale?</h2>
+                <p class="font-body-lg text-body-lg text-secondary">Echipa noastră tehnică oferă asistență completă și suport informativ pentru integrarea directă în proiectul de arhitectură comercial sau rezidențial.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+                <a href="contact.html" class="bg-slate-deep text-white px-10 py-5 font-label-md text-label-md uppercase tracking-widest text-center hover:bg-bronze-accent transition-all duration-300 font-bold shadow-xl">
+                    SOLICITĂ CONSULTANȚĂ TEHNICĂ
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<!-- Footer Corectat Integral (Doar Proiecte și ANPC) -->
+<footer id="site-global-footer" class="bg-slate-deep border-t border-outline/20 py-stack-lg mb-16 md:mb-0">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+        <div class="md:col-span-1">
+            <a href="index.html">
+                <img alt="Logo" class="h-10 invert brightness-200 mb-6 opacity-80 cursor-pointer" src="https://lh3.googleusercontent.com/aida/AP1WRLtyMHIax7Urx09CFuUBDE2txjHqwwSDUkhk2C0tGVC7Z1lgGO25JytIqsmMOUiQlV0kKYPGQJtule2HPVP0JM3UFJdCtUoEZhBMCTk5m7jpVUYsXZ4uW14hzwOBRXGPo5kEnfIocl-ljI7cOcotxaf6DHYE0AfGUK9oMi08oLx1eBdN0ewHOqHxqtnKrH7D6GvDcR65jHYhfuLZPc4HT5PCKAVZXj2erVqQeKw3V-kEEJjWNrvZL8bG-E-1"/>
+            </a>
+            <p class="text-outline-variant font-body-sm text-body-sm leading-relaxed mb-6">
+                Lider în furnizarea de soluții decorative moderne pentru arhitectura contemporană. Calitate fără compromisuri.
+            </p>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 border border-outline/20 flex items-center justify-center text-surface-bright hover:bg-bronze-accent hover:border-bronze-accent transition-all duration-300" href="#">
+                    <span class="material-symbols-outlined text-[20px]" data-icon="facebook">face_nod</span>
+                </a>
+                <a class="w-10 h-10 border border-outline/20 flex items-center justify-center text-surface-bright hover:bg-bronze-accent hover:border-bronze-accent transition-all duration-300" href="#">
+                    <span class="material-symbols-outlined text-[20px]" data-icon="share">share</span>
+                </a>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">PRODUSE</h5>
+            <ul class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <li><a class="hover:text-bronze-accent transition-colors" href="placi_decorative.html">Plăci Decorative</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="elemente_fatada.html">Elemente Fațadă</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="balustrade_sticla.html">Balustrade Sticlă</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="sticla_imprimata.html">Sticlă Imprimată</a></li>
+            </ul>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">INFORMAȚII</h5>
+            <ul class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <li><a class="hover:text-bronze-accent transition-colors" href="proiecte.html">Proiecte</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="anpc.html">ANPC</a></li>
+            </ul>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">CONTACT</h5>
+            <div class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <p class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent" data-icon="location_on">location_on</span>
+                    Otopeni, România<br/>Str. Ciprian Porumbescu Nr. 19-21
+                </p>
+                <p class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent" data-icon="call">call</span>
+                    0750 298 002
+                </p>
+                <p class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent" data-icon="mail">mail</span>
+                    office.decoratorii@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-stack-lg pt-8 border-t border-outline/10 text-center">
+        <p class="text-outline-variant font-body-sm text-body-sm opacity-50">
+            © 2026 DECORATORII. Arhitectură și Design Material. Toate drepturile rezervate.
+        </p>
+    </div>
+</footer>
+
+<!-- Mobile Navigation Bar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-surface-bright border-t border-metallic-silver z-50 flex items-center justify-around h-16 glass-panel">
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="index.html">
+        <span class="material-symbols-outlined text-[24px]" data-icon="home">home</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Home</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="placi_decorative.html">
+        <span class="material-symbols-outlined text-[24px]" data-icon="texture">texture</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Materiale</span>
+    </a>
+    <a class="flex flex-col items-center justify-center -translate-y-4" href="tel:+40750298002">
+        <div class="w-14 h-14 bg-slate-deep rounded-full flex items-center justify-center text-white shadow-xl">
+            <span class="material-symbols-outlined" data-icon="call">call</span>
+        </div>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="elemente_fatada.html">
+        <span class="material-symbols-outlined text-[24px]" data-icon="architecture">architecture</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Fațade</span>
+    </a>
+    <button class="flex flex-col items-center justify-center text-slate-deep opacity-60" id="mobile-menu-trigger">
+        <span class="material-symbols-outlined text-[24px]" data-icon="more_horiz">more_horiz</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Meniu</span>
+    </button>
+</div>
+
+<script>
+        // --- SCRIPT GLOBAL DE NAVIGARE STRUCTURALĂ ABSOLUTĂ ---
+        document.addEventListener('click', function(e) {
+            const anchor = e.target.closest('a');
+            if (anchor) {
+                const targetUrl = anchor.getAttribute('href');
+                if (targetUrl && targetUrl !== '#' && !targetUrl.startsWith('tel:') && !targetUrl.startsWith('mailto:') && !anchor.hasAttribute('download')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    window.location.href = targetUrl;
+                }
+            }
+        }, true);
+
+        // Drawer Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
+        const closeDrawer = document.getElementById('close-drawer');
+        const navDrawer = document.getElementById('nav-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+
+        function toggleDrawer() {
+            if (!navDrawer) return;
+            navDrawer.classList.toggle('-translate-x-full');
+            navDrawer.classList.toggle('nav-drawer-open');
+            if (overlay) {
+                overlay.classList.toggle('opacity-0');
+                overlay.classList.toggle('pointer-events-none');
+            }
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        if(menuToggle) menuToggle.addEventListener('click', toggleDrawer);
+        if(mobileMenuTrigger) mobileMenuTrigger.addEventListener('click', toggleDrawer);
+        if(closeDrawer) closeDrawer.addEventListener('click', toggleDrawer);
+        if(overlay) overlay.addEventListener('click', toggleDrawer);
+
+        // Scroll Effects (Header behavior)
+        const header = document.getElementById('main-header');
+        if (header) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2', 'shadow-md', 'h-16');
+                    header.classList.remove('h-20');
+                } else {
+                    header.classList.remove('py-2', 'shadow-md', 'h-16');
+                    header.classList.add('h-20');
+                }
+            });
+        }
+
+        // Safe Reveal animations on scroll
+        const reveals = document.querySelectorAll('.reveal-on-scroll');
+        if (reveals.length > 0) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.05 });
+
+            reveals.forEach(reveal => revealObserver.observe(reveal));
+        }
+</script>
+</body>
+</html>

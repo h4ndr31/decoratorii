@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="light" lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Informații Legale & Protecția Consumatorului - DECORATORII</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c3c7c8",
+                        "metallic-silver": "#DFE4EA",
+                        "background": "#f9f9f9",
+                        "primary": "#010506",
+                        "warm-sand": "#F1F2F6",
+                        "slate-deep": "#1E272E",
+                        "outline": "#747879",
+                        "bronze-accent": "#A58E7C",
+                        "surface-bright": "#f9f9f9",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "secondary": "#556065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "stack-xl": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-xl-mobile": ["Hanken Grotesk"],
+                        "headline-sm": ["Hanken Grotesk"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-xl": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl-mobile": ["40px", {"lineHeight": "1.1", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .nav-drawer-open {
+            transform: translateX(0) !important;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accent-divider {
+            height: 4px;
+            width: 48px;
+            background-color: #A58E7C;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-bronze-accent selection:text-white">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-40 bg-surface/80 backdrop-blur-md border-b border-metallic-silver transition-all duration-300" id="main-header">
+    <div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+        <div class="flex items-center gap-4">
+            <button class="p-2 text-primary hover:text-bronze-accent transition-colors duration-200" id="menu-toggle">
+                <span class="material-symbols-outlined text-[28px]">menu</span>
+            </button>
+        </div>
+        <a class="flex items-center" href="index.html">
+            <img alt="DECORATORII" class="h-10 md:h-12 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtyMHIax7Urx09CFuUBDE2txjHqwwSDUkhk2C0tGVC7Z1lgGO25JytIqsmMOUiQlV0kKYPGQJtule2HPVP0JM3UFJdCtUoEZhBMCTk5m7jpVUYsXZ4uW14hzwOBRXGPo5kEnfIocl-ljI7cOcotxaf6DHYE0AfGUK9oMi08oLx1eBdN0ewHOqHxqtnKrH7D6GvDcR65jHYhfuLZPc4HT5PCKAVZXj2erVqQeKw3V-kEEJjWNrvZL8bG-E-1"/>
+        </a>
+        <div class="hidden md:flex items-center gap-6">
+            <a class="text-secondary font-label-md text-label-md hover:text-bronze-accent transition-colors duration-300" href="index.html">HOME</a>
+            <a class="text-secondary font-label-md text-label-md hover:text-bronze-accent transition-colors duration-300" href="proiecte.html">PROIECTE</a>
+            <a class="flex items-center gap-2 border border-bronze-accent text-bronze-accent px-4 py-2 font-label-md text-[13px] tracking-wider hover:bg-bronze-accent hover:text-white transition-all duration-300" href="Decoratorii Brochure (1).pdf" download>
+                <span class="material-symbols-outlined text-[18px]">download</span> BROSURĂ
+            </a>
+            <a class="bg-slate-deep text-white px-5 py-2.5 font-label-md text-label-md tracking-widest hover:bg-bronze-accent transition-all duration-300" href="tel:+40750298002">0750 298 002</a>
+        </div>
+        <div class="md:hidden flex items-center gap-2">
+            <a class="p-2 text-bronze-accent flex items-center" href="Decoratorii Brochure (1).pdf" download title="Descarcă broșura">
+                <span class="material-symbols-outlined text-[26px]">download</span>
+            </a>
+            <a class="p-2 text-primary" href="tel:+40750298002">
+                <span class="material-symbols-outlined">call</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- NavigationDrawer Overlay -->
+<div class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-500" id="drawer-overlay"></div>
+
+<!-- NavigationDrawer -->
+<nav class="fixed inset-y-0 left-0 w-[85%] md:w-96 bg-surface z-50 transform -translate-x-full transition-transform duration-500 ease-out flex flex-col shadow-xl" id="nav-drawer">
+    <div class="p-8 flex justify-between items-center border-b border-metallic-silver">
+        <span class="font-headline-md text-headline-md font-bold tracking-tighter text-slate-deep">DECORATORII</span>
+        <button class="text-primary" id="close-drawer"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="flex-1 overflow-y-auto py-8 px-8 space-y-8">
+        <div class="space-y-4">
+            <p class="text-outline font-label-md text-label-md tracking-widest border-b border-metallic-silver pb-2">CATEGORII</p>
+            <div class="flex flex-col gap-6">
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="index.html"><span class="material-symbols-outlined">home</span> Home</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="placi_decorative.html"><span class="material-symbols-outlined">texture</span> Placi Decorative</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="elemente_fatada.html"><span class="material-symbols-outlined">architecture</span> Elemente Fatada</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="balustrade_sticla.html"><span class="material-symbols-outlined">grid_view</span> Balustrade Sticla</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="sticla_imprimata.html"><span class="material-symbols-outlined">imagesearch_roller">imagesearch_roller</span> Sticla Imprimata</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="contact.html"><span class="material-symbols-outlined">mail</span> Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Page Content -->
+<main class="pt-32 pb-stack-xl max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    
+    <!-- Hero Intro Section -->
+    <section class="mb-stack-lg reveal-on-scroll active">
+        <span class="font-label-md text-label-md text-bronze-accent uppercase tracking-[0.2em] block mb-4">Transparență și Protecție</span>
+        <h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-slate-deep mb-6">INFORMAȚII LEGALE & ANPC</h1>
+        <div class="accent-divider mb-8"></div>
+        <p class="font-body-lg text-body-lg text-secondary max-w-3xl leading-relaxed">
+            Suntem dedicați unei relații corecte și transparente cu partenerii și clienții noștri. În această pagină veți găsi toate detaliile legate de drepturile dumneavoastră legale, politica de retur, gestionarea modulelor cookie și accesul la autoritățile de reglementare.
+        </p>
+    </section>
+
+    <!-- Official Links Cards (ANPC & SOL) -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-12">
+        <div class="bg-warm-sand border border-metallic-silver p-8 rounded-sm flex flex-col justify-between group">
+            <div>
+                <div class="flex items-center gap-3 mb-4 text-slate-deep">
+                    <span class="material-symbols-outlined text-[32px] text-bronze-accent">gavel</span>
+                    <h3 class="font-headline-sm font-bold">Autoritatea Națională pentru Protecția Consumatorilor</h3>
+                </div>
+                <p class="text-body-sm text-secondary leading-relaxed mb-6">
+                    Pentru a depune o sesizare sau pentru a consulta drepturile consumatorilor, accesați platforma oficială a Autorității Naționale pentru Protecția Consumatorilor (ANPC).
+                </p>
+            </div>
+            <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer" class="bg-slate-deep text-white text-center font-label-md py-4 uppercase tracking-wider hover:bg-bronze-accent transition-all duration-300 font-bold block">
+                ACCESEAZĂ PLATFORMA ANPC
+            </a>
+        </div>
+
+        <div class="bg-warm-sand border border-metallic-silver p-8 rounded-sm flex flex-col justify-between group">
+            <div>
+                <div class="flex items-center gap-3 mb-4 text-slate-deep">
+                    <span class="material-symbols-outlined text-[32px] text-bronze-accent">balance</span>
+                    <h3 class="font-headline-sm font-bold">Soluționarea Online a Litigiilor (SOL)</h3>
+                </div>
+                <p class="text-body-sm text-secondary leading-relaxed mb-6">
+                    Comisia Europeană pune la dispoziție o platformă de soluționare alternativă a litigiilor apărute în urma tranzacțiilor comerciale online.
+                </p>
+            </div>
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="bg-slate-deep text-white text-center font-label-md py-4 uppercase tracking-wider hover:bg-bronze-accent transition-all duration-300 font-bold block">
+                ACCESEAZĂ PLATFORMA SOL
+            </a>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs for Legal Content -->
+    <section class="mb-stack-xl">
+        <div class="flex flex-wrap border-b border-metallic-silver gap-2 md:gap-4 mb-8">
+            <button onclick="switchTab('termeni')" id="tab-termeni" class="px-6 py-3 font-label-md text-sm border-b-2 border-bronze-accent text-slate-deep font-bold transition-all duration-200">TERMENI ȘI CONDIȚII</button>
+            <button onclick="switchTab('retur')" id="tab-retur" class="px-6 py-3 font-label-md text-sm border-b-2 border-transparent text-secondary hover:text-slate-deep transition-all duration-200">POLITICA DE RETUR</button>
+            <button onclick="switchTab('cookies')" id="tab-cookies" class="px-6 py-3 font-label-md text-sm border-b-2 border-transparent text-secondary hover:text-slate-deep transition-all duration-200">POLITICA DE COOKIES</button>
+        </div>
+
+        <!-- Legal Content Boxes -->
+        <div class="bg-white border border-metallic-silver p-6 md:p-12 space-y-8 text-secondary leading-relaxed">
+            
+            <!-- Tab: Termeni si Conditii -->
+            <div id="content-termeni" class="space-y-6">
+                <h2 class="font-headline-sm text-slate-deep font-bold border-b border-metallic-silver pb-2">1. Termeni și Condiții Generale</h2>
+                <p>Folosirea sau navigarea pe acest site implică acceptarea integrală a termenilor și condițiilor prezentate în continuare. Ne rezervăm dreptul de a efectua modificări asupra acestor prevederi fără o notificare prealabilă.</p>
+                
+                <h3 class="text-slate-deep font-bold mt-4">Proprietate Intelectuală</h3>
+                <p>Întregul conținut al site-ului (texte, imagini, elemente grafice, design, logo-uri) este proprietatea exclusivă a companiei noastre și este protejat de legislația privind drepturile de autor și proprietatea intelectuală. Copierea, reproducerea sau utilizarea conținutului fără acordul scris este strict interzisă.</p>
+                
+                <h3 class="text-slate-deep font-bold mt-4">Limitarea Răspunderii</h3>
+                <p>Informațiile prezente pe site au caracter informativ și tehnic. Depunem eforturi constante pentru menținerea acurateței datelor (dimensiuni, standarde, compoziție), însă nu ne asumăm răspunderea pentru eventualele erori tehnice de redactare independente de controlul nostru.</p>
+            </div>
+
+            <!-- Tab: Politica de Retur -->
+            <div id="content-retur" class="space-y-6 hidden">
+                <h2 class="font-headline-sm text-slate-deep font-bold border-b border-metallic-silver pb-2">2. Politica de Retur și Renunțare la Cumpărare</h2>
+                <p>Conform legislației în vigoare (Ordonanța de Urgență nr. 34/2014), consumatorii persoane fizice beneficiază de o perioadă de 14 zile calendaristice pentru a se retrage dintr-un contract încheiat la distanță, fără a fi nevoiți să justifice decizia.</p>
+                
+                <h3 class="text-slate-deep font-bold mt-4">Condiții de Acceptare a Returului</h3>
+                <p>Pentru ca produsele returnate (panouri decorative, elemente de fațadă etc.) să fie acceptate, acestea trebuie să îndeplinească următoarele criterii obligatorii:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Să fie în aceeași stare în care au fost livrate (fără urme de montaj, tăiere, adeziv sau deformări structurale).</li>
+                    <li>Să fie ambalate corespunzător pentru a preveni deteriorarea pe durata transportului de retur.</li>
+                    <li>Să fie însoțite de documentele fiscale originale (factură/bon fiscal) emise la livrare.</li>
+                </ul>
+
+                <h3 class="text-slate-deep font-bold mt-4">Excepții de la Retur</h3>
+                <p>Nu pot fi returnate produsele executate integral pe bază de comandă specială (dimensiuni atipice solicitate de proiectul arhitectural, debitări sau finisaje personalizate nestandardizate).</p>
+
+                <h3 class="text-slate-deep font-bold mt-4">Rambursarea Sumelor</h3>
+                <p>Rambursarea contravalorii produselor se va efectua în termen de maximum 14 zile de la data la care am fost informați de decizie, dar nu mai devreme de recepția fizică și verificarea stării materialelor returnate. Returnarea banilor se face prin transfer bancar direct.</p>
+            </div>
+
+            <!-- Tab: Politica de Cookies -->
+            <div id="content-cookies" class="space-y-6 hidden">
+                <h2 class="font-headline-sm text-slate-deep font-bold border-b border-metallic-silver pb-2">3. Politica de Utilizare a Modulelor Cookie</h2>
+                <p>Acest site folosește module cookie pentru a oferi vizitatorilor o experiență îmbunătățită de navigare și pentru a adapta serviciile la nevoile reale ale utilizatorilor.</p>
+                
+                <h3 class="text-slate-deep font-bold mt-4">Ce este un modul cookie?</h3>
+                <p>Un modul cookie este un fișier text de mici dimensiuni, stocat pe computerul, tableta sau telefonul dumneavoastră mobil, utilizat pentru a reține preferințe de navigare, analize statistice anonyme sau setări de limbă.</p>
+                
+                <h3 class="text-slate-deep font-bold mt-4">Tipuri de Cookies Utilizate</h3>
+                <div class="space-y-3">
+                    <p><strong>Cookies Strict Necesare:</strong> Esențiale pentru buna funcționare a site-ului, încărcarea corectă a fonturilor, stilurilor tehnice Tailwind și elementelor structurale.</p>
+                    <p><strong>Cookies de Performanță și Analiză:</strong> Ne permit să colectăm date statistice anonime privind traficul și paginile cele mai vizitate, ajutându-ne să optimizăm viteza și conținutul.</p>
+                </div>
+
+                <h3 class="text-slate-deep font-bold mt-4">Controlul și Ștergerea Fișierelor Cookie</h3>
+                <p>Puteți schimba în orice moment setările browserului dumneavoastră pentru a bloca, refuza sau șterge modulele cookie instalate. Rețineți că dezactivarea anumitor module poate afecta încărcarea fluidă sau afișarea anumitor scripturi din pagină.</p>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer id="site-global-footer" class="bg-slate-deep border-t border-outline/20 py-stack-lg mb-16 md:mb-0">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+        <div class="md:col-span-1">
+            <a href="index.html">
+                <img alt="Logo" class="h-10 invert brightness-200 mb-6 opacity-80 cursor-pointer" src="https://lh3.googleusercontent.com/aida/AP1WRLtyMHIax7Urx09CFuUBDE2txjHqwwSDUkhk2C0tGVC7Z1lgGO25JytIqsmMOUiQlV0kKYPGQJtule2HPVP0JM3UFJdCtUoEZhBMCTk5m7jpVUYsXZ4uW14hzwOBRXGPo5kEnfIocl-ljI7cOcotxaf6DHYE0AfGUK9oMi08oLx1eBdN0ewHOqHxqtnKrH7D6GvDcR65jHYhfuLZPc4HT5PCKAVZXj2erVqQeKw3V-kEEJjWNrvZL8bG-E-1"/>
+            </a>
+            <p class="text-outline-variant font-body-sm text-body-sm leading-relaxed mb-6">
+                Lider în furnizarea de soluții decorative moderne pentru arhitectura contemporană. Calitate fără compromisuri.
+            </p>
+            <div class="flex gap-4">
+                <span class="w-10 h-10 border border-outline/20 flex items-center justify-center text-surface-bright rounded-sm cursor-pointer"><span class="material-symbols-outlined text-[20px]">face_nod</span></span>
+                <span class="w-10 h-10 border border-outline/20 flex items-center justify-center text-surface-bright rounded-sm cursor-pointer"><span class="material-symbols-outlined text-[20px]">share</span></span>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">PRODUSE</h5>
+            <ul class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <li><a class="hover:text-bronze-accent transition-colors" href="placi_decorative.html">Plăci Decorative</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="elemente_fatada.html">Elemente Fațadă</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="balustrade_sticla.html">Balustrade Sticlă</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="sticla_imprimata.html">Sticlă Imprimată</a></li>
+            </ul>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">INFORMAȚII</h5>
+            <ul class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <li><a class="hover:text-bronze-accent transition-colors" href="proiecte.html">Proiecte</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="anpc.html">ANPC</a></li>
+            </ul>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">CONTACT</h5>
+            <div class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <p class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent">location_on</span>
+                    Otopeni, România<br/>Str. Ciprian Porumbescu Nr. 19-21
+                </p>
+                <p class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent">call</span>
+                    0750 298 002
+                </p>
+                <p class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent">mail</span>
+                    office.decoratorii@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-stack-lg pt-8 border-t border-outline/10 text-center">
+        <p class="text-outline-variant font-body-sm text-body-sm opacity-50">
+            © 2026 DECORATORII. Arhitectură și Design Material. Toate drepturile rezervate.
+        </p>
+    </div>
+</footer>
+
+<!-- Mobile Navigation Bar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-surface-bright border-t border-metallic-silver z-50 flex items-center justify-around h-16 glass-panel">
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="index.html">
+        <span class="material-symbols-outlined text-[24px]">home</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Home</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="placi_decorative.html">
+        <span class="material-symbols-outlined text-[24px]">texture</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Materiale</span>
+    </a>
+    <a class="flex flex-col items-center justify-center -translate-y-4" href="tel:+40750298002">
+        <div class="w-14 h-14 bg-slate-deep rounded-full flex items-center justify-center text-white shadow-xl">
+            <span class="material-symbols-outlined">call</span>
+        </div>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="elemente_fatada.html">
+        <span class="material-symbols-outlined text-[24px]">architecture</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Fațade</span>
+    </a>
+    <button class="flex flex-col items-center justify-center text-slate-deep opacity-60" id="mobile-menu-trigger">
+        <span class="material-symbols-outlined text-[24px]">more_horiz</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Meniu</span>
+    </button>
+</div>
+
+<script>
+        // --- SCRIPT GLOBAL DE NAVIGARE STRUCTURALĂ ABSOLUTĂ ---
+        document.addEventListener('click', function(e) {
+            const anchor = e.target.closest('a');
+            if (anchor) {
+                const targetUrl = anchor.getAttribute('href');
+                if (targetUrl && targetUrl !== '#' && !targetUrl.startsWith('tel:') && !targetUrl.startsWith('mailto:') && !anchor.hasAttribute('download')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    window.location.href = targetUrl;
+                }
+            }
+        }, true);
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            const ids = ['termeni', 'retur', 'cookies'];
+            ids.forEach(id => {
+                const content = document.getElementById(`content-${id}`);
+                const tabBtn = document.getElementById(`tab-${id}`);
+                
+                if (id === tabId) {
+                    content.classList.remove('hidden');
+                    tabBtn.classList.add('border-bronze-accent', 'text-slate-deep', 'font-bold');
+                    tabBtn.classList.remove('border-transparent', 'text-secondary');
+                } else {
+                    content.classList.add('hidden');
+                    tabBtn.classList.remove('border-bronze-accent', 'text-slate-deep', 'font-bold');
+                    tabBtn.classList.add('border-transparent', 'text-secondary');
+                }
+            });
+        }
+
+        // Drawer Toggle Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
+        const navDrawer = document.getElementById('nav-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+
+        function toggleDrawer() {
+            if (!navDrawer) return;
+            navDrawer.classList.toggle('-translate-x-full');
+            if (overlay) {
+                overlay.classList.toggle('opacity-0');
+                overlay.classList.toggle('pointer-events-none');
+            }
+        }
+
+        if(menuToggle) menuToggle.addEventListener('click', toggleDrawer);
+        if(mobileMenuTrigger) mobileMenuTrigger.addEventListener('click', toggleDrawer);
+        if(overlay) overlay.addEventListener('click', toggleDrawer);
+</script>
+</body>
+</html>

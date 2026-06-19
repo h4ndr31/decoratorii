@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html class="light" lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>DECORATORII - Panouri Decorative pentru Fațade și Interioare</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c3c7c8",
+                        "metallic-silver": "#DFE4EA",
+                        "background": "#f9f9f9",
+                        "primary": "#010506",
+                        "warm-sand": "#F1F2F6",
+                        "slate-deep": "#1E272E",
+                        "outline": "#747879",
+                        "bronze-accent": "#A58E7C",
+                        "surface-bright": "#f9f9f9",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "secondary": "#556065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "stack-xl": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-xl-mobile": ["Hanken Grotesk"],
+                        "headline-sm": ["Hanken Grotesk"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-xl": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl-mobile": ["40px", {"lineHeight": "1.1", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .nav-drawer-open {
+            transform: translateX(0) !important;
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accent-divider {
+            height: 4px;
+            width: 48px;
+            background-color: #A58E7C;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-bronze-accent selection:text-white">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-40 bg-surface/80 backdrop-blur-md border-b border-metallic-silver transition-all duration-300" id="main-header">
+    <div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+        <div class="flex items-center gap-4">
+            <button class="p-2 text-primary hover:text-bronze-accent transition-colors duration-200" id="menu-toggle">
+                <span class="material-symbols-outlined text-[28px]">menu</span>
+            </button>
+        </div>
+        <a class="flex items-center" href="index.html">
+            <img alt="DECORATORII" class="h-10 md:h-12 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtyMHIax7Urx09CFuUBDE2txjHqwwSDUkhk2C0tGVC7Z1lgGO25JytIqsmMOUiQlV0kKYPGQJtule2HPVP0JM3UFJdCtUoEZhBMCTk5m7jpVUYsXZ4uW14hzwOBRXGPo5kEnfIocl-ljI7cOcotxaf6DHYE0AfGUK9oMi08oLx1eBdN0ewHOqHxqtnKrH7D6GvDcR65jHYhfuLZPc4HT5PCKAVZXj2erVqQeKw3V-kEEJjWNrvZL8bG-E-1"/>
+        </a>
+        <div class="hidden md:flex items-center gap-6">
+            <a class="text-primary font-label-md text-label-md hover:text-bronze-accent transition-colors duration-300 font-bold underline underline-offset-8 decoration-bronze-accent" href="index.html">HOME</a>
+            <a class="text-secondary font-label-md text-label-md hover:text-bronze-accent transition-colors duration-300" href="proiecte.html">PROIECTE</a>
+            <a class="flex items-center gap-2 border border-bronze-accent text-bronze-accent px-4 py-2 font-label-md text-[13px] tracking-wider hover:bg-bronze-accent hover:text-white transition-all duration-300" href="Decoratorii Brochure (1).pdf" download>
+                <span class="material-symbols-outlined text-[18px]">download</span> BROSURĂ
+            </a>
+            <a class="bg-slate-deep text-white px-5 py-2.5 font-label-md text-label-md tracking-widest hover:bg-bronze-accent transition-all duration-300" href="tel:+40750298002">0750 298 002</a>
+        </div>
+        <div class="md:hidden flex items-center gap-2">
+            <a class="p-2 text-bronze-accent flex items-center" href="Decoratorii Brochure (1).pdf" download title="Descarcă broșura">
+                <span class="material-symbols-outlined text-[26px]">download</span>
+            </a>
+            <a class="p-2 text-primary" href="tel:+40750298002">
+                <span class="material-symbols-outlined">call</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- NavigationDrawer Overlay -->
+<div class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-500" id="drawer-overlay"></div>
+
+<!-- NavigationDrawer -->
+<nav class="fixed inset-y-0 left-0 w-[85%] md:w-96 bg-surface z-50 transform -translate-x-full transition-transform duration-500 ease-out flex flex-col shadow-xl" id="nav-drawer">
+    <div class="p-8 flex justify-between items-center border-b border-metallic-silver">
+        <span class="font-headline-md text-headline-md font-bold tracking-tighter text-slate-deep">DECORATORII</span>
+        <button class="text-primary" id="close-drawer"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="flex-1 overflow-y-auto py-8 px-8 space-y-8">
+        <div class="space-y-4">
+            <p class="text-outline font-label-md text-label-md tracking-widest border-b border-metallic-silver pb-2">CATEGORII</p>
+            <div class="flex flex-col gap-6">
+                <a class="group flex items-center gap-4 text-bronze-accent font-bold font-headline-sm text-headline-sm border-b border-bronze-accent pb-2" href="index.html"><span class="material-symbols-outlined">home</span> Home</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="placi_decorative.html"><span class="material-symbols-outlined">texture</span> Placi Decorative</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="elemente_fatada.html"><span class="material-symbols-outlined">architecture</span> Elemente Fatada</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="balustrade_sticla.html"><span class="material-symbols-outlined">grid_view</span> Balustrade Sticla</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="sticla_imprimata.html"><span class="material-symbols-outlined">imagesearch_roller">imagesearch_roller</span> Sticla Imprimata</a>
+                <a class="group flex items-center gap-4 text-slate-deep hover:text-bronze-accent transition-all duration-300 font-headline-sm text-headline-sm" href="contact.html"><span class="material-symbols-outlined">mail</span> Contact</a>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-metallic-silver">
+            <a class="flex items-center justify-center gap-2 w-full bg-bronze-accent text-white py-3 font-label-md tracking-widest hover:bg-slate-deep transition-all duration-300" href="Decoratorii Brochure (1).pdf" download>
+                <span class="material-symbols-outlined">download</span> DESCARCĂ BROȘURA
+            </a>
+        </div>
+    </div>
+    <div class="p-8 bg-warm-sand">
+        <p class="text-body-sm text-secondary mb-4">Comenzi și Consultanță</p>
+        <a class="text-headline-sm font-headline-sm text-slate-deep font-bold" href="tel:+40750298002">0750 298 002</a>
+    </div>
+</nav>
+
+<!-- Main Content Area -->
+<main class="pt-32 pb-stack-xl max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    
+    <!-- Hero Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center mb-stack-xl reveal-on-scroll active">
+        <div class="lg:col-span-6 space-y-6">
+            <span class="font-label-md text-label-md text-bronze-accent uppercase tracking-[0.2em] block">Decoratorii.ro</span>
+            <h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-slate-deep leading-[1.1]">
+                Soluții decorative moderne pentru spații care ies în evidență
+            </h1>
+            <div class="accent-divider"></div>
+            <p class="font-body-lg text-body-lg text-secondary leading-relaxed max-w-xl">
+                Panouri decorative pentru fațade, dedicate proiectelor rezidențiale și comerciale. Furnizăm soluții cu impact arhitectural, care îmbină estetica contemporană cu cerințele funcționale ale construcțiilor moderne.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                <a href="placi_decorative.html" class="bg-slate-deep text-white px-8 py-4 font-label-md text-center hover:bg-bronze-accent transition-all duration-300 font-bold tracking-widest">
+                    PRODUSE PREMIUM
+                </a>
+                <a href="Decoratorii Brochure (1).pdf" download class="border border-bronze-accent text-bronze-accent px-8 py-4 font-label-md text-center hover:bg-bronze-accent hover:text-white transition-all duration-300 font-bold tracking-widest flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined">download</span> DESCARCĂ BROȘURA
+                </a>
+            </div>
+        </div>
+        <div class="lg:col-span-6 relative aspect-[1/1] sm:aspect-[4/3] bg-warm-sand overflow-hidden border border-metallic-silver">
+            <img class="w-full h-full object-cover" alt="Decoratorii ansamblu amenajari" src="fata.png"/>
+            <div class="absolute bottom-4 left-4 bg-slate-deep text-white px-4 py-2 text-[12px] font-mono tracking-widest glass-panel">DESIGN | BUILD Concept</div>
+        </div>
+    </section>
+
+    <!-- Misiunea și Valorile Noastre -->
+    <section class="bg-warm-sand p-8 md:p-16 border border-metallic-silver mb-stack-xl reveal-on-scroll active">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Misiunea -->
+            <div class="lg:col-span-6 space-y-6">
+                <h3 class="font-headline-md text-slate-deep border-b border-outline-variant pb-2">Misiunea noastră</h3>
+                <div class="space-y-4">
+                    <p class="text-body-md text-secondary flex gap-3"><span class="font-bold text-bronze-accent font-mono">01.</span> Punem la dispoziție panouri decorative potrivite pentru fațadele clădirilor, contribuind la identitatea vizuală a ansamblurilor rezidențiale.</p>
+                    <p class="text-body-md text-secondary flex gap-3"><span class="font-bold text-bronze-accent font-mono">02.</span> Distribuim produse care permit implementarea eficientă în proiecte de volum, cu rezultate estetice consistente.</p>
+                    <p class="text-body-md text-secondary flex gap-3"><span class="font-bold text-bronze-accent font-mono">03.</span> Oferim o gamă variată de texturi și finisaje care pot fi integrate în concepte arhitecturale moderne sau clasice.</p>
+                    <p class="text-body-md text-secondary flex gap-3"><span class="font-bold text-bronze-accent font-mono">04.</span> Asigurăm suport informativ pentru arhitecți și dezvoltatori în selectarea panourilor potrivite fiecărui proiect.</p>
+                </div>
+            </div>
+            <!-- Valorile -->
+            <div class="lg:col-span-6 space-y-6">
+                <h3 class="font-headline-md text-slate-deep border-b border-outline-variant pb-2">Valorile noastre</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <h5 class="font-headline-sm text-[18px] text-slate-deep mb-1">Impact vizual durabil</h5>
+                        <p class="text-body-sm text-secondary font-light">Produsele sunt alese pentru a contribui la valoarea estetică pe termen lung a fațadelor.</p>
+                    </div>
+                    <div>
+                        <h5 class="font-headline-sm text-[18px] text-slate-deep mb-1">Coerență arhitecturală</h5>
+                        <p class="text-body-sm text-secondary font-light">Panourile decorative susțin conceptul general al proiectului, fără a-l încărca vizual.</p>
+                    </div>
+                    <div>
+                        <h5 class="font-headline-sm text-[18px] text-slate-deep mb-1">Calitate și predictibilitate</h5>
+                        <p class="text-body-sm text-secondary font-light">Distribuim soluții care permit planificare clară și results constante în execuție.</p>
+                    </div>
+                    <div>
+                        <h5 class="font-headline-sm text-[18px] text-slate-deep mb-1">Parteneriate strategice</h5>
+                        <p class="text-body-sm text-secondary font-light">Colaborăm cu arhitecți și dezvoltatori pentru a livra soluții adaptate cerințelor fiecărui proiect.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog de Texturi & Finisaje -->
+    <section class="mb-stack-xl reveal-on-scroll active">
+        <div class="mb-8">
+            <span class="font-label-md text-label-md text-bronze-accent uppercase tracking-widest block mb-2">Catalog de Texturi & Finisaje</span>
+            <h2 class="font-headline-md text-headline-md text-slate-deep">Tipuri principale de panouri decorative</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            <!-- 1. Aspect Lemn -->
+            <div class="bg-white border border-metallic-silver p-6 group flex flex-col justify-between">
+                <div>
+                    <div class="aspect-video overflow-hidden relative mb-4 bg-warm-sand border border-metallic-silver">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Panouri Aspect Lemn" src="lemn.png"/>
+                    </div>
+                    <h3 class="font-headline-sm text-slate-deep mb-2">Panouri Aspect Lemn</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-4">
+                        Concepute pentru proiecte arhitecturale care urmăresc un echilibru între estetică naturală și durabilitate. Oferă senzația vizuală a lemnului natural, fără dezavantajele materialelor tradiționale, fiind potrivite pentru fațadele ansamblurilor rezidențiale și clădirilor comerciale moderne.
+                    </p>
+                </div>
+                <a href="placi_decorative.html" class="text-bronze-accent font-bold font-label-md flex items-center gap-1">VEZI SPECIFICAȚII <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+            </div>
+
+            <!-- 2. Aspect Cărămidă -->
+            <div class="bg-white border border-metallic-silver p-6 group flex flex-col justify-between">
+                <div>
+                    <div class="aspect-video overflow-hidden relative mb-4 bg-warm-sand border border-metallic-silver">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Panouri Aspect Cărămidă" src="caramida.png"/>
+                    </div>
+                    <h3 class="font-headline-sm text-slate-deep mb-2">Panouri Aspect Cărămidă</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-4">
+                        Concepute pentru proiecte arhitecturale care urmăresc un caracter autentic și o expresie urbană clară. Reproduc textura și ritmul cărămizii tradiționale, oferind o soluție practică și estetică pentru fațadele clădirilor și spațiilor cu identitate arhitecturală puternică.
+                    </p>
+                </div>
+                <a href="placi_decorative.html" class="text-bronze-accent font-bold font-label-md flex items-center gap-1">VEZI SPECIFICAȚII <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+            </div>
+
+            <!-- 3. Aspect Piatră -->
+            <div class="bg-white border border-metallic-silver p-6 group flex flex-col justify-between">
+                <div>
+                    <div class="aspect-video overflow-hidden relative mb-4 bg-warm-sand border border-metallic-silver">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Panouri Aspect Piatră" src="piatra.png"/>
+                    </div>
+                    <h3 class="font-headline-sm text-slate-deep mb-2">Panouri Aspect Piatră (Sute de Modele)</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-4">
+                        Destinate proiectelor arhitecturale care pun accent pe soliditate vizuală și expresivitate. Reproduc fidel textura pietrei naturale și oferă o soluție eficientă pentru fațadele ansamblurilor rezidențiale, clădirilor comerciale și zonelor de accent arhitectural. Gama este foarte largă.
+                    </p>
+                </div>
+                <a href="placi_decorative.html" class="text-bronze-accent font-bold font-label-md flex items-center gap-1">VEZI TOATĂ GRILA <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+            </div>
+
+            <!-- 4. Aspect Marmură -->
+            <div class="bg-white border border-metallic-silver p-6 group flex flex-col justify-between">
+                <div>
+                    <div class="aspect-video overflow-hidden relative mb-4 bg-warm-sand border border-metallic-silver">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Panouri Aspect Marmură" src="marmura.png"/>
+                    </div>
+                    <h3 class="font-headline-sm text-slate-deep mb-2">Panouri Aspect Marmură</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-4">
+                        Dedicate proiectelor arhitecturale care urmăresc un impact vizual sofisticat și o expresie contemporană. Reproduc desenul și profunzimea marmurei naturale, oferind o soluție estetică deosebită fără constrângerile greutății sau costurilor materialelor tradiționale.
+                    </p>
+                </div>
+                <a href="placi_decorative.html" class="text-bronze-accent font-bold font-label-md flex items-center gap-1">VEZI SPECIFICAȚII <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fisa Tehnica Detaliata -->
+    <section class="bg-slate-deep text-surface-bright p-8 md:p-16 border border-white/10 mb-stack-xl reveal-on-scroll active">
+        <div class="max-w-3xl mb-12">
+            <span class="text-bronze-accent font-label-md text-label-md tracking-wider uppercase block mb-2">Specificații Tehnice Oficiale</span>
+            <h2 class="font-headline-lg text-headline-lg">Performanță în conformitate cu standardele europene</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-metallic-silver">
+            <div class="space-y-4">
+                <h4 class="text-white font-headline-sm text-[20px] border-b border-white/10 pb-2">Caracteristici Structurale</h4>
+                <p class="text-body-sm flex justify-between"><span>Material de bază:</span> <strong class="text-white">Polistiren expandat (EPS 100)</strong></p>
+                <p class="text-body-sm flex justify-between"><span>Înveliș exterior:</span> <strong class="text-white">Polimer acrylic structural (2 la 5 mm grosime)</strong></p>
+                <p class="text-body-sm flex justify-between"><span>Dimensiuni standard:</span> <strong class="text-white">100x50 cm sau 200x50 cm (personalizabile)</strong></p>
+                <p class="text-body-sm flex justify-between"><span>Permeabilitate la apă:</span> <strong class="text-white">Redusă (0.3 kg/mp·h⁰⁵) - Rezistă la intemperii</strong></p>
+                <p class="text-body-sm flex justify-between"><span>Protecție biologică:</span> <strong class="text-white">Împiedică apariția mucegaiului pe suprafețe</strong></p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="text-white font-headline-sm text-[20px] border-b border-white/10 pb-2">Siguranță la Foc: Clasa B-s1, d0</h4>
+                <div class="space-y-2 text-[13px] font-light">
+                    <p class="flex gap-2"><strong class="text-bronze-accent font-mono">B (Combustibilitate):</strong> Material combustibil, dar cu o contribuție extrem de limitată la foc.</p>
+                    <p class="flex gap-2"><strong class="text-bronze-accent font-mono">s1 (Indice fum):</strong> Produce fum minim. Menține o vizibilitate bună în caz de incendiu.</p>
+                    <p class="flex gap-2"><strong class="text-bronze-accent font-mono">d0 (Picături/Scântei):</strong> Fără picături sau scântei aprinse. Nu aruncă material incandescent care să propage flăcările.</p>
+                    <p class="text-body-sm text-white/70 italic pt-2">O clasificare excelentă pentru siguranța clădirilor comerciale și rezidențiale de mari dimensiuni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="reveal-on-scroll active">
+        <div class="bg-white border border-metallic-silver p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12 rounded-lg">
+            <div class="max-w-xl text-center md:text-left">
+                <span class="text-bronze-accent font-label-md text-label-md tracking-widest block mb-2 uppercase">SUPORT ȘI LOGISTICĂ</span>
+                <h2 class="font-headline-lg text-headline-lg text-slate-deep mb-4">Sunteți în căutarea unor materiale fiabile?</h2>
+                <p class="font-body-lg text-body-lg text-secondary">
+                    Panourile noastre oferă avantaje multiple: izolație integrată (termică/fonică), aplicare facilă direct pe suprafața dorită (vopsită sau nevopsită) cu cutter și adeziv, totul la un cost redus comparativ cu finisajele tradiționale.
+                </p>
+            </div>
+            <div class="w-full md:w-auto flex flex-col gap-4">
+                <a href="contact.html" class="bg-slate-deep text-white px-8 py-5 font-label-md uppercase tracking-widest text-center hover:bg-bronze-accent transition-all duration-300 font-bold shadow-xl">
+                    CONTACTAȚI-NE ACUM
+                </a>
+                <a href="Decoratorii Brochure (1).pdf" download class="bg-warm-sand border border-metallic-silver text-slate-deep px-8 py-4 font-label-md uppercase tracking-widest text-center hover:bg-bronze-accent hover:text-white transition-all duration-300 font-bold flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined">download</span> DESCARCĂ CATALOG
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer id="site-global-footer" class="bg-slate-deep border-t border-outline/20 py-stack-lg mb-16 md:mb-0">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+        <div class="md:col-span-1">
+            <a href="index.html">
+                <img alt="Logo" class="h-10 invert brightness-200 mb-6 opacity-80 cursor-pointer" src="https://lh3.googleusercontent.com/aida/AP1WRLtyMHIax7Urx09CFuUBDE2txjHqwwSDUkhk2C0tGVC7Z1lgGO25JytIqsmMOUiQlV0kKYPGQJtule2HPVP0JM3UFJdCtUoEZhBMCTk5m7jpVUYsXZ4uW14hzwOBRXGPo5kEnfIocl-ljI7cOcotxaf6DHYE0AfGUK9oMi08oLx1eBdN0ewHOqHxqtnKrH7D6GvDcR65jHYhfuLZPc4HT5PCKAVZXj2erVqQeKw3V-kEEJjWNrvZL8bG-E-1"/>
+            </a>
+            <p class="text-outline-variant font-body-sm text-body-sm leading-relaxed mb-6">
+                Lider în furnizarea de soluții decorative moderne pentru arhitectura contemporană. Calitate fără compromisuri.
+            </p>
+            <div class="flex gap-4">
+                <span class="w-10 h-10 border border-outline/20 flex items-center justify-center text-surface-bright rounded-sm cursor-pointer"><span class="material-symbols-outlined text-[20px]">face_nod</span></span>
+                <span class="w-10 h-10 border border-outline/20 flex items-center justify-center text-surface-bright rounded-sm cursor-pointer"><span class="material-symbols-outlined text-[20px]">share</span></span>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">PRODUSE</h5>
+            <ul class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <li><a class="hover:text-bronze-accent transition-colors" href="placi_decorative.html">Plăci Decorative</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="elemente_fatada.html">Elemente Fațadă</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="balustrade_sticla.html">Balustrade Sticlă</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="sticla_imprimata.html">Sticlă Imprimată</a></li>
+            </ul>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">INFORMAȚII</h5>
+            <ul class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <li><a class="hover:text-bronze-accent transition-colors" href="proiecte.html">Proiecte</a></li>
+                <li><a class="hover:text-bronze-accent transition-colors" href="anpc.html">ANPC</a></li>
+            </ul>
+        </div>
+        <div class="space-y-6">
+            <h5 class="font-label-md text-label-md uppercase tracking-widest text-surface-bright">CONTACT</h5>
+            <div class="space-y-4 text-outline-variant font-body-sm text-body-sm">
+                <p class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent">location_on</span>
+                    Otopeni, România<br/>Str. Ciprian Porumbescu Nr. 19-21
+                </p>
+                <p class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent">call</span>
+                    0750 298 002
+                </p>
+                <p class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-bronze-accent">mail</span>
+                    office.decoratorii@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-stack-lg pt-8 border-t border-outline/10 text-center">
+        <p class="text-outline-variant font-body-sm text-body-sm opacity-50">
+            © 2026 DECORATORII. Arhitectură și Design Material. Toate drepturile rezervate.
+        </p>
+    </div>
+</footer>
+
+<!-- Mobile Navigation Bar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-surface-bright border-t border-metallic-silver z-50 flex items-center justify-around h-16 glass-panel">
+    <a class="flex flex-col items-center justify-center text-slate-deep" href="index.html">
+        <span class="material-symbols-outlined text-[24px]">home</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Home</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="placi_decorative.html">
+        <span class="material-symbols-outlined text-[24px]">texture</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Materiale</span>
+    </a>
+    <a class="flex flex-col items-center justify-center -translate-y-4" href="tel:+40750298002">
+        <div class="w-14 h-14 bg-slate-deep rounded-full flex items-center justify-center text-white shadow-xl">
+            <span class="material-symbols-outlined">call</span>
+        </div>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-deep opacity-60" href="elemente_fatada.html">
+        <span class="material-symbols-outlined text-[24px]">architecture</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Fațade</span>
+    </a>
+    <button class="flex flex-col items-center justify-center text-slate-deep opacity-60" id="mobile-menu-trigger">
+        <span class="material-symbols-outlined text-[24px]">more_horiz</span>
+        <span class="text-[10px] uppercase font-bold mt-1">Meniu</span>
+    </button>
+</div>
+
+<script>
+        // --- SCRIPT GLOBAL DE NAVIGARE STRUCTURALĂ ABSOLUTĂ ---
+        document.addEventListener('click', function(e) {
+            const anchor = e.target.closest('a');
+            if (anchor) {
+                const targetUrl = anchor.getAttribute('href');
+                if (targetUrl && targetUrl !== '#' && !targetUrl.startsWith('tel:') && !targetUrl.startsWith('mailto:') && !anchor.hasAttribute('download')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    window.location.href = targetUrl;
+                }
+            }
+        }, true);
+
+        // Drawer Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
+        const closeDrawer = document.getElementById('close-drawer');
+        const navDrawer = document.getElementById('nav-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+
+        function toggleDrawer() {
+            if (!navDrawer) return;
+            navDrawer.classList.toggle('-translate-x-full');
+            navDrawer.classList.toggle('nav-drawer-open');
+            if (overlay) {
+                overlay.classList.toggle('opacity-0');
+                overlay.classList.toggle('pointer-events-none');
+            }
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        if(menuToggle) menuToggle.addEventListener('click', toggleDrawer);
+        if(mobileMenuTrigger) mobileMenuTrigger.addEventListener('click', toggleDrawer);
+        if(closeDrawer) closeDrawer.addEventListener('click', toggleDrawer);
+        if(overlay) overlay.addEventListener('click', toggleDrawer);
+
+        // Scroll Effects
+        const header = document.getElementById('main-header');
+        if (header) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2', 'shadow-md', 'h-16');
+                    header.classList.remove('h-20');
+                } else {
+                    header.classList.remove('py-2', 'shadow-md', 'h-16');
+                    header.classList.add('h-20');
+                }
+            });
+        }
+
+        // Reveal animations on scroll
+        const reveals = document.querySelectorAll('.reveal-on-scroll');
+        if (reveals.length > 0) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.05 });
+
+            reveals.forEach(reveal => revealObserver.observe(reveal));
+        }
+</script>
+</body>
+</html>
